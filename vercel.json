@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "proofsync_app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "proofsync_app.py" }
+  ]
+}
